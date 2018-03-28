@@ -1,0 +1,43 @@
+/* ------ background page: about panel ------ */
+.aboutDiv .item {
+  margin-bottom: 30px;
+}
+
+.aboutDiv h2 {
+/*  font-size: 20px;
+  font-weight: 500;*/
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+.aboutDiv h3 {
+/*  font-size: 17px;
+  font-weight: 300;*/
+  margin: 0;
+}
+
+.aboutDiv h4 {
+/*  font-size: 15px;
+  font-weight: 300;*/
+  margin: 0;
+}
+
+.aboutDiv h5 {
+/*  font-size: 13px;*/
+  margin: 0;
+}
+
+.aboutDiv h6 {
+  font-size: 16px;
+  font-weight: 300;
+  color: #828282;
+}
+
+.aboutDiv li {
+/*  font-size: 14px;*/
+  margin: 0;
+}
+
+.itemList {
+  display: inline-block;
+}
