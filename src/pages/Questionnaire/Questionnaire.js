@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
-import './Questionnaire.css';
-import QuestionList from '../../data/questions.js';
+import QuestionList from '../../data/questions';
 
 class Questionnaire extends Component {
 	// state to store current question
@@ -34,9 +33,7 @@ class Questionnaire extends Component {
 		window.history.go(-1);
 	}
 
-	// buttons for each answer option;
-	// if a following question exists, redirect to next question
-	// else, redirect to result page
+	// create buttons that lead to either a subsequent question or a result
 	makeButtons = answers => {
 		const buttons = answers.map(answer => 
 			answer.next ?
@@ -51,7 +48,7 @@ class Questionnaire extends Component {
 			<Container className='questionContainer'>
 				<Row>
 					<Col className='text-center' sm={{ size: 8, offset: 2 }}>
-						<h1>{this.state.question.title}</h1>
+						<h1 className='question-title'>{this.state.question.title}</h1>
 					</Col>
 				</Row>
 				<Row>

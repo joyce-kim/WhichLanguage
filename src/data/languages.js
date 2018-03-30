@@ -55,4 +55,4 @@ var LanguageList = [
 	}
 ]
 
-export default LanguageList;
+module.exports = LanguageList;

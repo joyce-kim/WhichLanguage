@@ -1,23 +1,26 @@
 body {
 	background: black;
-	/*color: white;*/
 }
 
-a {
+.links {
 	float: right;
 	font-weight: 100;
 	font-family: 'Exo', sans-serif;
-	margin: 1%;
 	font-size: 0.9em;
 }
 
-a:hover {
+.links:hover {
 	text-decoration: none;
 	color: white;
-	font-weight: 400;
+	font-weight: 100;
+}
+
+.links:visited {
+	text-decoration: none;
 }
 
 /*landing page*/
+
 .bluetext {
 	color: #60f4ff;
 }
@@ -25,8 +28,6 @@ a:hover {
 	padding-top: 33%;
 	text-align: center;
 	color: white;
-	/*background-image: url('./assets/background.jpg');
-	background-size: 100%;*/
 	background: black;	
 }
 

@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Jumbotron, Card, CardImg, CardText, CardBody,
   CardTitle, Button} from 'reactstrap';
-import './Result.css';
-import LanguageList from '../../data/languages.js';
+import LanguageList from '../../data/languages';
 
 class Result extends Component {
 
@@ -13,17 +12,18 @@ class Result extends Component {
 
 	// before component mounts, grab language matching route params
 	componentWillMount() {
+		console.log(LanguageList);
 		var current = LanguageList.find(x => x.name === this.props.match.params.id);
 		this.setState({
 			result: current
 		});
 	};
 
+	// create an info card for each language
 	makeCards = () => {
-		const cards = LanguageList.map(language =>
+		const cards = LanguageList.map((language, i) => (
 			<Col md='4'>
-				<Card>
-					
+				<Card id={i}>			
 					<CardBody>
 						<CardTitle>{language.name}</CardTitle>
 						<CardText>{language.description}</CardText>
@@ -31,15 +31,15 @@ class Result extends Component {
 					</CardBody>
 				</Card>
 			</Col>
-		);
+		));
 		return <Row>{cards}</Row>
 	}
 
 	render () {
 		return (
 			<div>
-				<a href='http://joycekim.me' className='bluetext' target='_blank'>Joyce Kim</a>
-				<a href='https://github.com/joyce-kim/which-language' className='bluetext' target='_blank'>github</a>
+				<Button id='github-link' color='link' className='links bluetext' onClick={e => this.openLink(e, 'https://github.com/joyce-kim/which-language')}>Github</Button>
+				<Button id='jk-link' color='link' className='links bluetext' onClick={e => this.openLink(e, 'http://joycekim.me')}>Joyce Kim</Button>	
 				<Container className='resultContainer'>
 					<Jumbotron>
 						<h1 className='bluetext'>{this.state.result.name}</h1>

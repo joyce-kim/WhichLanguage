@@ -129,4 +129,5 @@ var QuestionList = [
 
 ];
 
-export default QuestionList;
+// export default QuestionList;
+module.exports = QuestionList;
