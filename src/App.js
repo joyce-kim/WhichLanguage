@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Landing from './pages/Landing';
 import Questionnaire from './pages/Questionnaire';
 import Result from './pages/Result';
+import './App.css';
 
 const App = () =>
   <Router>

@@ -1,0 +1,85 @@
+body {
+	background: black;
+	/*color: white;*/
+}
+
+a {
+	float: right;
+	font-weight: 100;
+	font-family: 'Exo', sans-serif;
+	margin: 1%;
+	font-size: 0.9em;
+}
+
+a:hover {
+	text-decoration: none;
+	color: white;
+	font-weight: 400;
+}
+
+/*landing page*/
+.bluetext {
+	color: #60f4ff;
+}
+.jumbotron {
+	padding-top: 33%;
+	text-align: center;
+	color: white;
+	/*background-image: url('./assets/background.jpg');
+	background-size: 100%;*/
+	background: black;	
+}
+
+.jumbotron h1 {
+	font-family: 'Exo', sans-serif;
+	font-size: 4em;
+	font-weight: 100;
+}
+
+.btn-primary {
+	margin-top: 15%;
+	margin-bottom: 15%;
+}
+
+.card {
+	margin-bottom: 10%;
+}
+
+.card-title {
+	font-size: 2em;
+	font-family: 'Exo', sans-serif;
+}
+
+.card-text {
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*question page*/
+
+.questionContainer {
+	margin-top: 20%;
+}
+
+.questionContainer h1 {
+	color: white;
+	font-weight: 100;
+	font-size: 3.5em;
+}
+
+.btn-outline-primary {
+	margin-top: 5%;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+.backButton {
+	float: right;
+	margin-top: 5%;
+	margin-right: 15%;
+}
+
+/*result page*/
+
+.resultContainer h1 {
+	font-size: 8em;
+}

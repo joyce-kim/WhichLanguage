@@ -1,4 +1,4 @@
-var questions = [
+var QuestionList = [
   {
     id: 'start',
     title:'Why do you want to learn programming?',
@@ -22,7 +22,7 @@ var questions = [
     title: 'Which platform/field?',
     answers: [
       {option: 'I want to work for big tech companies', next: 3},
-      {option: 'Doesn&#39;t matter I just want $$$', result: 'Java'},
+      {option: "Doesn't matter I just want $$$", result: 'Java'},
       {option: 'Web', next: 4},
       {option: 'Enterprise', next: 6},
       {option: 'Mobile', next: 13},
@@ -117,8 +117,16 @@ var questions = [
       {option: 'Enterprise', next: 6},
       {option: 'Web', next: 4},
     ]
+  },
+  {
+    id: '13',
+    title: 'Which OS?',
+    answers: [
+      {option: 'iOS', result: 'Objective-C'},
+      {option: 'Android', result: 'Java'}
+    ]
   }
 
 ];
 
-export default questions;
+export default QuestionList;
